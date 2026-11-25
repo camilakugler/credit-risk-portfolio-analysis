@@ -1,47 +1,56 @@
-# Credit Risk Portfolio Analysis
+# Análise de Risco de Crédito
 
-## Project Overview
+## 1. Visão Geral do Projeto
 
-This project analyzes historical Lending Club loan data to evaluate credit portfolio performance and identify patterns associated with credit losses.
+Este projeto tem como objetivo analisar dados históricos de empréstimos da Lending Club para avaliar o desempenho de uma carteira de crédito e identificar padrões associados às perdas financeiras.
 
-The analysis focuses on **36-month loans issued between 2011 and 2015**, investigating loan outcomes, borrower financial characteristics, interest rates, and credit risk classifications.
+A análise concentra-se em **empréstimos com prazo de 36 meses, concedidos entre 2011 e 2015**, investigando o desempenho dos contratos, as características financeiras dos tomadores, as taxas de juros e as classificações de risco de crédito.
 
-## Business Problem
+## 2. Problema de Negócio
 
-A financial institution's Credit Risk Management team needs to evaluate historical loan performance to identify segments associated with higher credit losses and support future credit policy assessments.
+A equipe de Gestão de Risco de Crédito de uma instituição financeira precisa avaliar o desempenho histórico de sua carteira de empréstimos, identificar segmentos associados a maiores perdas e fornecer informações que contribuam para futuras avaliações da política de concessão de crédito.
 
-The project aims to answer the following questions:
+Para isso, o projeto busca responder às seguintes perguntas:
 
-1. How did loan origination volume evolve between 2011 and 2015?
-2. How did the proportion of fully paid and charged-off loans vary across origination years?
-3. Which credit risk grades showed higher proportions of charged-off loans?
-4. How is the debt-to-income ratio (DTI) associated with loan outcomes?
-5. How do interest rates relate to loan performance?
-6. Which loan purposes showed higher proportions of credit losses?
+1. Como evoluiu o volume de empréstimos concedidos entre 2011 e 2015?
+2. Como variou a proporção de contratos quitados e baixados como perda ao longo dos anos?
+3. Quais classificações de risco de crédito apresentaram maiores proporções de contratos baixados como perda?
+4. Qual é a relação entre o índice de endividamento (DTI) e os resultados dos empréstimos?
+5. Como as taxas de juros se relacionam com o desempenho dos contratos?
+6. Quais finalidades de empréstimo apresentaram maiores proporções de perdas?
 
-## Dataset
+## 3. Dataset
 
-- **Source:** [Lending Club Loan Data — Kaggle](https://www.kaggle.com/datasets/wordsforthewise/lending-club)
-- **Original dataset:** 2,267,701 records and 151 columns
-- **Selected dataset:** 603,736 loan records and 11 columns
-- **Origination period:** 2011–2015
-- **Loan term:** 36 months
+**Fonte:** [Lending Club Loan Data — Kaggle](https://www.kaggle.com/datasets/wordsforthewise/lending-club)
 
-The original dataset is not included in this repository due to its size.
+**Características dos dados:**
 
-## Technologies
+- Dataset original: 2.267.701 registros e 151 colunas.
+- Dataset selecionado: 603.736 contratos e 11 colunas.
+- Período de concessão: 2011 a 2015.
+- Prazo dos empréstimos: 36 meses.
 
-- **Python and Pandas:** Data exploration, quality assessment, and preparation
-- **PostgreSQL:** SQL queries and credit risk analysis
-- **Power BI:** Interactive dashboard and KPI visualization
-- **PowerPoint:** Executive presentation of findings
+O dataset original não está incluído neste repositório devido ao seu tamanho. Os dados foram utilizados exclusivamente para fins educacionais e de desenvolvimento de portfólio.
 
-## Data Quality
+## 4. Tecnologias Utilizadas
 
-The selected dataset contains no duplicate loan identifiers or fully duplicated records.
+- **Python e Pandas:** exploração inicial, avaliação da qualidade e preparação dos dados.
+- **PostgreSQL:** consultas SQL e análise dos indicadores de risco de crédito.
+- **Power BI:** desenvolvimento de dashboard interativo e visualização dos indicadores.
+- **PowerPoint:** apresentação executiva dos resultados e conclusões.
 
-Two records contain missing DTI values and report zero annual income. These records were retained, preserving the missing values for analyses where DTI is unavailable.
+## 5. Qualidade e Preparação dos Dados
 
-## Project Status
+A exploração inicial identificou a existência de valores ausentes em diferentes colunas do dataset original.
 
-**In progress — Data preparation completed. SQL analysis is the next stage.**
+Após a seleção dos contratos de 36 meses concedidos entre 2011 e 2015, foram realizadas verificações de integridade e qualidade dos dados.
+
+O conjunto de dados preparado foi exportado para CSV, preservando o arquivo original.
+
+## 6. Status do Projeto
+
+**Em desenvolvimento — Etapa de preparação dos dados concluída.**
+
+A próxima etapa consiste na importação dos dados para o PostgreSQL e no desenvolvimento das consultas SQL que responderão às perguntas de negócio.
+
+Posteriormente, os resultados serão apresentados em um dashboard interativo no Power BI e em uma apresentação executiva com as principais conclusões e recomendações.
